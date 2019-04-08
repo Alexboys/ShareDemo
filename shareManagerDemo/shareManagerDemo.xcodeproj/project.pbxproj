@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		314FC28BE12AA06079B730A6 /* libPods-shareManagerDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 46080498E6F83AC1E59D6FF1 /* libPods-shareManagerDemo.a */; };
 		35ECC395225AFAC500BBAE21 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 35ECC394225AFAC500BBAE21 /* AppDelegate.m */; };
 		35ECC398225AFAC500BBAE21 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35ECC397225AFAC500BBAE21 /* ViewController.m */; };
 		35ECC39B225AFAC500BBAE21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35ECC399225AFAC500BBAE21 /* Main.storyboard */; };
@@ -26,6 +27,9 @@
 		35ECC39F225AFAC700BBAE21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		35ECC3A1225AFAC700BBAE21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		35ECC3A2225AFAC700BBAE21 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		46080498E6F83AC1E59D6FF1 /* libPods-shareManagerDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-shareManagerDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A0BA4DB376949832587CD8C /* Pods-shareManagerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shareManagerDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-shareManagerDemo/Pods-shareManagerDemo.release.xcconfig"; sourceTree = "<group>"; };
+		BD073B2683A5DBF48496EFDB /* Pods-shareManagerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shareManagerDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-shareManagerDemo/Pods-shareManagerDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				314FC28BE12AA06079B730A6 /* libPods-shareManagerDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13D45539A09803D853E9742D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				46080498E6F83AC1E59D6FF1 /* libPods-shareManagerDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		35ECC387225AFAC500BBAE21 = {
 			isa = PBXGroup;
 			children = (
 				35ECC392225AFAC500BBAE21 /* shareManagerDemo */,
 				35ECC391225AFAC500BBAE21 /* Products */,
+				A958BDFC17DAA17E34B0490D /* Pods */,
+				13D45539A09803D853E9742D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +86,15 @@
 			path = shareManagerDemo;
 			sourceTree = "<group>";
 		};
+		A958BDFC17DAA17E34B0490D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BD073B2683A5DBF48496EFDB /* Pods-shareManagerDemo.debug.xcconfig */,
+				9A0BA4DB376949832587CD8C /* Pods-shareManagerDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 35ECC3A6225AFAC700BBAE21 /* Build configuration list for PBXNativeTarget "shareManagerDemo" */;
 			buildPhases = (
+				9D70EE2CFAA55888FAD25269 /* [CP] Check Pods Manifest.lock */,
 				35ECC38C225AFAC500BBAE21 /* Sources */,
 				35ECC38D225AFAC500BBAE21 /* Frameworks */,
 				35ECC38E225AFAC500BBAE21 /* Resources */,
+				DCCFB701E12144BB2C08BECD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -135,6 +161,55 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9D70EE2CFAA55888FAD25269 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-shareManagerDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DCCFB701E12144BB2C08BECD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-shareManagerDemo/Pods-shareManagerDemo-resources.sh",
+				"${PODS_ROOT}/UMCCommonLog/UMCommonLog/UMCommonLog.bundle",
+				"${PODS_ROOT}/UMCShare/UMShare/UMSocialUI/UMSocialSDKResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/UMCommonLog.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/UMSocialSDKResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-shareManagerDemo/Pods-shareManagerDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		35ECC38C225AFAC500BBAE21 /* Sources */ = {
@@ -283,6 +358,7 @@
 		};
 		35ECC3A7225AFAC700BBAE21 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD073B2683A5DBF48496EFDB /* Pods-shareManagerDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +375,7 @@
 		};
 		35ECC3A8225AFAC700BBAE21 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A0BA4DB376949832587CD8C /* Pods-shareManagerDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
