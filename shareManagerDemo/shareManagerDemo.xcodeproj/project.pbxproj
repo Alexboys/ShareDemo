@@ -8,25 +8,35 @@
 
 /* Begin PBXBuildFile section */
 		314FC28BE12AA06079B730A6 /* libPods-shareManagerDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 46080498E6F83AC1E59D6FF1 /* libPods-shareManagerDemo.a */; };
-		35ECC395225AFAC500BBAE21 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 35ECC394225AFAC500BBAE21 /* AppDelegate.m */; };
-		35ECC398225AFAC500BBAE21 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35ECC397225AFAC500BBAE21 /* ViewController.m */; };
-		35ECC39B225AFAC500BBAE21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35ECC399225AFAC500BBAE21 /* Main.storyboard */; };
 		35ECC39D225AFAC700BBAE21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35ECC39C225AFAC700BBAE21 /* Assets.xcassets */; };
 		35ECC3A0225AFAC700BBAE21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35ECC39E225AFAC700BBAE21 /* LaunchScreen.storyboard */; };
 		35ECC3A3225AFAC700BBAE21 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 35ECC3A2225AFAC700BBAE21 /* main.m */; };
+		35ECC3AC225AFCB900BBAE21 /* XLShareManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 35ECC3AA225AFCB800BBAE21 /* XLShareManager.m */; };
+		35ECC3B1225AFDAC00BBAE21 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 35ECC3B0225AFDAC00BBAE21 /* AppDelegate.m */; };
+		35ECC3B7225AFE9900BBAE21 /* GXBaseNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35ECC3B5225AFE9800BBAE21 /* GXBaseNavigationViewController.m */; };
+		35ECC3B8225AFE9900BBAE21 /* GXRootTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35ECC3B6225AFE9900BBAE21 /* GXRootTabBarController.m */; };
+		35ECC3BC225AFF3900BBAE21 /* GXHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 35ECC3BB225AFF3900BBAE21 /* GXHomeVC.m */; };
+		35ECC3BE225B0AEB00BBAE21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35ECC3BD225B0AEB00BBAE21 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		35ECC390225AFAC500BBAE21 /* shareManagerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shareManagerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		35ECC393225AFAC500BBAE21 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		35ECC394225AFAC500BBAE21 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		35ECC396225AFAC500BBAE21 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		35ECC397225AFAC500BBAE21 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		35ECC39A225AFAC500BBAE21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		35ECC39C225AFAC700BBAE21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		35ECC39F225AFAC700BBAE21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		35ECC3A1225AFAC700BBAE21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		35ECC3A2225AFAC700BBAE21 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		35ECC3AA225AFCB800BBAE21 /* XLShareManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLShareManager.m; sourceTree = "<group>"; };
+		35ECC3AB225AFCB800BBAE21 /* XLShareManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLShareManager.h; sourceTree = "<group>"; };
+		35ECC3AD225AFD1B00BBAE21 /* GXPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXPrefixHeader.pch; sourceTree = "<group>"; };
+		35ECC3AF225AFDAC00BBAE21 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		35ECC3B0225AFDAC00BBAE21 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		35ECC3B3225AFE9800BBAE21 /* GXRootTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXRootTabBarController.h; sourceTree = "<group>"; };
+		35ECC3B4225AFE9800BBAE21 /* GXBaseNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXBaseNavigationViewController.h; sourceTree = "<group>"; };
+		35ECC3B5225AFE9800BBAE21 /* GXBaseNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXBaseNavigationViewController.m; sourceTree = "<group>"; };
+		35ECC3B6225AFE9900BBAE21 /* GXRootTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXRootTabBarController.m; sourceTree = "<group>"; };
+		35ECC3BA225AFF3900BBAE21 /* GXHomeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXHomeVC.h; sourceTree = "<group>"; };
+		35ECC3BB225AFF3900BBAE21 /* GXHomeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXHomeVC.m; sourceTree = "<group>"; };
+		35ECC3BD225B0AEB00BBAE21 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		46080498E6F83AC1E59D6FF1 /* libPods-shareManagerDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-shareManagerDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A0BA4DB376949832587CD8C /* Pods-shareManagerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shareManagerDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-shareManagerDemo/Pods-shareManagerDemo.release.xcconfig"; sourceTree = "<group>"; };
 		BD073B2683A5DBF48496EFDB /* Pods-shareManagerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shareManagerDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-shareManagerDemo/Pods-shareManagerDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -73,17 +83,56 @@
 		35ECC392225AFAC500BBAE21 /* shareManagerDemo */ = {
 			isa = PBXGroup;
 			children = (
-				35ECC393225AFAC500BBAE21 /* AppDelegate.h */,
-				35ECC394225AFAC500BBAE21 /* AppDelegate.m */,
-				35ECC396225AFAC500BBAE21 /* ViewController.h */,
-				35ECC397225AFAC500BBAE21 /* ViewController.m */,
-				35ECC399225AFAC500BBAE21 /* Main.storyboard */,
+				35ECC3A9225AFCB800BBAE21 /* XLShareManager */,
+				35ECC3AE225AFDAC00BBAE21 /* T_Appdelegate */,
+				35ECC3B2225AFE4F00BBAE21 /* T_Main */,
+				35ECC3B9225AFF0D00BBAE21 /* T_HomeVC */,
 				35ECC39C225AFAC700BBAE21 /* Assets.xcassets */,
+				35ECC3BD225B0AEB00BBAE21 /* Main.storyboard */,
 				35ECC39E225AFAC700BBAE21 /* LaunchScreen.storyboard */,
 				35ECC3A1225AFAC700BBAE21 /* Info.plist */,
 				35ECC3A2225AFAC700BBAE21 /* main.m */,
+				35ECC3AD225AFD1B00BBAE21 /* GXPrefixHeader.pch */,
 			);
 			path = shareManagerDemo;
+			sourceTree = "<group>";
+		};
+		35ECC3A9225AFCB800BBAE21 /* XLShareManager */ = {
+			isa = PBXGroup;
+			children = (
+				35ECC3AB225AFCB800BBAE21 /* XLShareManager.h */,
+				35ECC3AA225AFCB800BBAE21 /* XLShareManager.m */,
+			);
+			path = XLShareManager;
+			sourceTree = "<group>";
+		};
+		35ECC3AE225AFDAC00BBAE21 /* T_Appdelegate */ = {
+			isa = PBXGroup;
+			children = (
+				35ECC3AF225AFDAC00BBAE21 /* AppDelegate.h */,
+				35ECC3B0225AFDAC00BBAE21 /* AppDelegate.m */,
+			);
+			path = T_Appdelegate;
+			sourceTree = "<group>";
+		};
+		35ECC3B2225AFE4F00BBAE21 /* T_Main */ = {
+			isa = PBXGroup;
+			children = (
+				35ECC3B3225AFE9800BBAE21 /* GXRootTabBarController.h */,
+				35ECC3B6225AFE9900BBAE21 /* GXRootTabBarController.m */,
+				35ECC3B4225AFE9800BBAE21 /* GXBaseNavigationViewController.h */,
+				35ECC3B5225AFE9800BBAE21 /* GXBaseNavigationViewController.m */,
+			);
+			path = T_Main;
+			sourceTree = "<group>";
+		};
+		35ECC3B9225AFF0D00BBAE21 /* T_HomeVC */ = {
+			isa = PBXGroup;
+			children = (
+				35ECC3BA225AFF3900BBAE21 /* GXHomeVC.h */,
+				35ECC3BB225AFF3900BBAE21 /* GXHomeVC.m */,
+			);
+			path = T_HomeVC;
 			sourceTree = "<group>";
 		};
 		A958BDFC17DAA17E34B0490D /* Pods */ = {
@@ -123,6 +172,7 @@
 		35ECC388225AFAC500BBAE21 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = GX;
 				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = T_Guo;
 				TargetAttributes = {
@@ -154,9 +204,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35ECC3BE225B0AEB00BBAE21 /* Main.storyboard in Resources */,
 				35ECC3A0225AFAC700BBAE21 /* LaunchScreen.storyboard in Resources */,
 				35ECC39D225AFAC700BBAE21 /* Assets.xcassets in Resources */,
-				35ECC39B225AFAC500BBAE21 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,23 +266,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35ECC398225AFAC500BBAE21 /* ViewController.m in Sources */,
+				35ECC3AC225AFCB900BBAE21 /* XLShareManager.m in Sources */,
 				35ECC3A3225AFAC700BBAE21 /* main.m in Sources */,
-				35ECC395225AFAC500BBAE21 /* AppDelegate.m in Sources */,
+				35ECC3B7225AFE9900BBAE21 /* GXBaseNavigationViewController.m in Sources */,
+				35ECC3BC225AFF3900BBAE21 /* GXHomeVC.m in Sources */,
+				35ECC3B8225AFE9900BBAE21 /* GXRootTabBarController.m in Sources */,
+				35ECC3B1225AFDAC00BBAE21 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		35ECC399225AFAC500BBAE21 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				35ECC39A225AFAC500BBAE21 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		35ECC39E225AFAC700BBAE21 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -362,7 +407,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JWNXJXA43H;
+				GCC_PREFIX_HEADER = "$(PRODUCT_NAME)/GXPrefixHeader.pch";
 				INFOPLIST_FILE = shareManagerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -379,7 +427,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JWNXJXA43H;
+				GCC_PREFIX_HEADER = "$(PRODUCT_NAME)/GXPrefixHeader.pch";
 				INFOPLIST_FILE = shareManagerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  GXHomeVC.h
 //  shareManagerDemo
 //
 //  Created by T-guo on 2019/4/8.
@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+NS_ASSUME_NONNULL_BEGIN
 
+@interface GXHomeVC : UIViewController
 
 @end
 
+NS_ASSUME_NONNULL_END

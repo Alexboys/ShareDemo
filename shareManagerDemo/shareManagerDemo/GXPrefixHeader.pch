@@ -1,0 +1,107 @@
+//
+//  GXPrefixHeader.pch
+//  shareManagerDemo
+//
+//  Created by T-guo on 2019/4/8.
+//  Copyright © 2019 T_Guo. All rights reserved.
+//
+
+//打印
+#ifdef DEBUG
+#define DYLogs(FORMAT, ...) fprintf(stderr,"[%s:%d行] %s\n",[[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String], __LINE__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
+#else
+#define DYLogs(...)
+#endif
+
+#define WeakObj(o) try{}@finally{} __weak typeof(o) o##Weak = o;
+#define WeakSelf __weak typeof(self) weakSelf = self;
+
+
+//判断机型  iPhoneX
+#define kDevice_Is_iPhoneX isIPhoneXSeries()
+#define kHeightStatusBar ([UIApplication sharedApplication].statusBarFrame.size.height)//(20)
+#define kHeightTabBar self.tabBarController.tabBar.bounds.size.height
+
+//#define Height_StatusBar (kDevice_Is_iPhoneX==YES)?44.0f: 20.0f
+//#define Height_NavBar (kDevice_Is_iPhoneX==YES)?88.0f: 64.0f
+//#define Height_TabBar (kDevice_Is_iPhoneX==YES)?83.0f: 49.0f
+
+//屏幕宽高
+#define SCREEN_FRAME [[UIScreen mainScreen] bounds]
+#define SCREEN_HEIGHT [[UIScreen mainScreen] bounds].size.height
+#define SCREEN_WIDTH [[UIScreen mainScreen] bounds].size.width
+#define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self
+
+#define XW_StatusBarHeight [[UIApplication sharedApplication] statusBarFrame].size.height //状态栏高度
+#define XW_TabBarHeight (XW_StatusBarHeight>40?83:49) //底部tabbar高度
+#define XW_NavBarHeight 44.0
+#define XW_TopHeight (XW_StatusBarHeight + XW_NavBarHeight) //整个导航栏高度
+#define XWLayout(px) (1.0f*SCREEN_WIDTH/750*(px))
+
+//颜色
+#define WHITECOLOR [UIColor whiteColor]
+#define ORANGECOLOR [UIColor orangeColor]
+#define DARKGRAYCOLOR [UIColor darkGrayColor]
+#define BLACKCOLOR [UIColor blackColor]
+#define REDCOLOR [UIColor redColor]
+#define YELLOWCOLOR [UIColor yellowColor]
+#define BLUECOLOR [UIColor blueColor]
+#define GREENCOLOR [UIColor greenColor]
+#define CLEARCOLOR [UIColor clearColor]
+#define GROUPTABLEVIEWCOLOR [UIColor groupTableViewBackgroundColor]
+
+#define UIFontBoldSize(fontsize) [UIFont boldSystemFontOfSize:fontsize]
+#define UIFontSize(size) [UIFont systemFontOfSize:size]
+
+#define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)(((rgbValue) & 0xFF0000) >> 16))/255.0 green:((float)(((rgbValue) & 0xFF00) >> 8))/255.0 blue:((float)((rgbValue) & 0xFF))/255.0 alpha:1.0]
+#define UIColorFromARGB(rgbValue) [UIColor colorWithRed:((float)(((rgbValue) & 0xFF0000) >> 16))/255.0 green:((float)(((rgbValue) & 0xFF00) >> 8))/255.0 blue:((float)((rgbValue) & 0xFF))/255.0 alpha:((float)(((rgbValue) & 0xFF000000) >> 24))]
+#define UIColorFromRGBA(rgbValue,alphaValue) [UIColor colorWithRed:((float)(((rgbValue) & 0xFF0000) >> 16))/255.0 green:((float)(((rgbValue) & 0xFF00) >> 8))/255.0 blue:((float)((rgbValue) & 0xFF))/255.0 alpha:alphaValue]
+
+
+//字符串不为空
+#define StrNoNull(str) (str == nil || [str isKindOfClass:[NSNull class]] || [str isEqual: @"null"])?@"":str
+#define NULLString(string) ((![string isKindOfClass:[NSString class]])||[string isEqualToString:@""] || (string == nil) || [string isEqualToString:@""] || [string isKindOfClass:[NSNull class]]||[[string stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]] length]==0)
+
+#define APPVersion [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
+#define APPBuild [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"]
+
+//单例的宏
+#define AS_SINGLETON( ... ) \
++ (instancetype)sharedInstance;
+
+#define DEF_SINGLETON( ... ) \
++ (instancetype)sharedInstance \
+{ \
+static dispatch_once_t once; \
+static id __singleton__; \
+dispatch_once( &once, ^{ __singleton__ = [[self alloc] init]; } ); \
+return __singleton__; \
+}
+
+
+//pod文件
+#import <Masonry.h>
+//友盟分享
+#import <UMCommon/UMCommon.h>
+#import <UMShare/UMShare.h>
+#import <UShareUI/UShareUI.h>
+#import <UserNotifications/UserNotifications.h>
+#import <UMCommonLog/UMCommonLogHeaders.h>
+
+
+
+static inline BOOL isIPhoneXSeries() {
+    BOOL iPhoneXSeries = NO;
+    if (UIDevice.currentDevice.userInterfaceIdiom != UIUserInterfaceIdiomPhone) {
+        return iPhoneXSeries;
+    }
+    
+    if (@available(iOS 11.0, *)) {
+        UIWindow *mainWindow = [[[UIApplication sharedApplication] delegate] window];
+        if (mainWindow.safeAreaInsets.bottom > 0.0) {
+            iPhoneXSeries = YES;
+        }
+    }
+    
+    return iPhoneXSeries;
+}

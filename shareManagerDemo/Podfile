@@ -7,6 +7,7 @@ target 'shareManagerDemo' do
 
   # Pods for shareManagerDemo
 
+  pod 'Masonry'
   pod 'UMCCommon'
   pod 'UMCSecurityPlugins'
   pod 'UMCCommonLog'
