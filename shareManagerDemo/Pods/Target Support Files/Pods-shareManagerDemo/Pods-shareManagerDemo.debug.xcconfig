@@ -1,8 +1,7 @@
 FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/UMCCommon" "${PODS_ROOT}/UMCCommonLog/UMCommonLog" "${PODS_ROOT}/UMCSecurityPlugins/thirdparties" "${PODS_ROOT}/UMCShare/UMShare" "${PODS_ROOT}/UMCShare/UMShare/UMSocialUI"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/Masonry" "${PODS_ROOT}/Headers/Public/UMCCommon" "${PODS_ROOT}/Headers/Public/UMCCommonLog" "${PODS_ROOT}/Headers/Public/UMCSecurityPlugins" "${PODS_ROOT}/Headers/Public/UMCShare"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/Masonry" "${PODS_ROOT}/Headers/Public/UMCShare"
 LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Masonry" "${PODS_ROOT}/UMCShare/UMShare/SocialLibraries/QQ" "${PODS_ROOT}/UMCShare/UMShare/SocialLibraries/Sina" "${PODS_ROOT}/UMCShare/UMShare/SocialLibraries/WeChat"
-OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/Masonry" -isystem "${PODS_ROOT}/Headers/Public/UMCCommon" -isystem "${PODS_ROOT}/Headers/Public/UMCCommonLog" -isystem "${PODS_ROOT}/Headers/Public/UMCSecurityPlugins" -isystem "${PODS_ROOT}/Headers/Public/UMCShare"
 OTHER_LDFLAGS = $(inherited) -ObjC -l"Masonry" -l"SocialQQ" -l"SocialSina" -l"SocialWeChat" -l"sqlite3" -l"z" -framework "CoreGraphics" -framework "CoreTelephony" -framework "Foundation" -framework "Photos" -framework "QuartzCore" -framework "SecurityEnvSDK" -framework "SystemConfiguration" -framework "UIKit" -framework "UMCommon" -framework "UMCommonLog" -framework "UMShare" -framework "UShareUI" -framework "UTDID"
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
