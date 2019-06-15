@@ -1,5 +1,20 @@
 PODS:
+  - CocoaLumberjack (3.5.2):
+    - CocoaLumberjack/Core (= 3.5.2)
+  - CocoaLumberjack/Core (3.5.2)
   - Masonry (1.1.0)
+  - Protobuf (3.7.0)
+  - SSZipArchive (2.1.5)
+  - SVGAPlayer (2.3.3):
+    - SVGAPlayer/Core (= 2.3.3)
+    - SVGAPlayer/ProtoFiles (= 2.3.3)
+  - SVGAPlayer/Core (2.3.3):
+    - SSZipArchive (>= 1.8.1)
+    - SVGAPlayer/ProtoFiles
+  - SVGAPlayer/ProtoFiles (2.3.3):
+    - Protobuf (~> 3.4)
+  - SVGKit (2.1.0):
+    - CocoaLumberjack (~> 3.0)
   - UMCCommon (1.5.3)
   - UMCCommonLog (1.0.0)
   - UMCSecurityPlugins (1.0.6)
@@ -19,7 +34,10 @@ PODS:
     - UMCShare/Core
 
 DEPENDENCIES:
+  - CocoaLumberjack
   - Masonry
+  - SVGAPlayer
+  - SVGKit
   - UMCCommon
   - UMCCommonLog
   - UMCSecurityPlugins
@@ -30,19 +48,29 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - CocoaLumberjack
     - Masonry
+    - Protobuf
+    - SSZipArchive
+    - SVGAPlayer
+    - SVGKit
     - UMCCommon
     - UMCCommonLog
     - UMCSecurityPlugins
     - UMCShare
 
 SPEC CHECKSUMS:
+  CocoaLumberjack: 118bf4a820efc641f79fa487b75ed928dccfae23
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  Protobuf: 7a877b7f3e5964e3fce995e2eb323dbc6831bb5a
+  SSZipArchive: cefe1364104a0231268a5deb8495bdf2861f52f0
+  SVGAPlayer: cf93c1761209c478003951fa23376e7ed7dedc96
+  SVGKit: 8a2fc74258bdb2abb54d3b65f3dd68b0277a9c4d
   UMCCommon: 016af43c0f769feb1ae1861d65aaf2b23b89c9c7
   UMCCommonLog: 05a2d5de21858e3d870551562cff405c1366d244
   UMCSecurityPlugins: 0831a08f3988f3cea9f1d3a7626cd9bee4fef150
   UMCShare: 552b29753f1b4da87b51d96545ed19e6263df397
 
-PODFILE CHECKSUM: d370811e76923ca5312acb94e14fd0956a89d58e
+PODFILE CHECKSUM: a7c83a8fd4e428dcf30e52c1815107453023d539
 
 COCOAPODS: 1.7.0.rc.1

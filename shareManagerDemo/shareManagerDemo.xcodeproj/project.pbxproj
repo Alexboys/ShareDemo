@@ -3,11 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		314FC28BE12AA06079B730A6 /* libPods-shareManagerDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 46080498E6F83AC1E59D6FF1 /* libPods-shareManagerDemo.a */; };
+		352542DD22B4B784007A7B0B /* UIImage+SVGManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 352542DC22B4B784007A7B0B /* UIImage+SVGManager.m */; };
+		352542DF22B4BB9C007A7B0B /* icon.svg in Resources */ = {isa = PBXBuildFile; fileRef = 352542DE22B4BB9C007A7B0B /* icon.svg */; };
+		352542E722B4C2C6007A7B0B /* SVGPlayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 352542E622B4C2C6007A7B0B /* SVGPlayerVC.m */; };
+		352542ED22B4C824007A7B0B /* mutiMatte.svga in Resources */ = {isa = PBXBuildFile; fileRef = 352542E922B4C824007A7B0B /* mutiMatte.svga */; };
+		352542EE22B4C824007A7B0B /* heartbeat.svga in Resources */ = {isa = PBXBuildFile; fileRef = 352542EA22B4C824007A7B0B /* heartbeat.svga */; };
+		352542EF22B4C824007A7B0B /* rose_2.0.0.svga in Resources */ = {isa = PBXBuildFile; fileRef = 352542EB22B4C824007A7B0B /* rose_2.0.0.svga */; };
+		352542F022B4C824007A7B0B /* rose_1.5.0.svga in Resources */ = {isa = PBXBuildFile; fileRef = 352542EC22B4C824007A7B0B /* rose_1.5.0.svga */; };
 		35ECC39D225AFAC700BBAE21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35ECC39C225AFAC700BBAE21 /* Assets.xcassets */; };
 		35ECC3A0225AFAC700BBAE21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35ECC39E225AFAC700BBAE21 /* LaunchScreen.storyboard */; };
 		35ECC3A3225AFAC700BBAE21 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 35ECC3A2225AFAC700BBAE21 /* main.m */; };
@@ -20,6 +27,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		352542DB22B4B784007A7B0B /* UIImage+SVGManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+SVGManager.h"; sourceTree = "<group>"; };
+		352542DC22B4B784007A7B0B /* UIImage+SVGManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SVGManager.m"; sourceTree = "<group>"; };
+		352542DE22B4BB9C007A7B0B /* icon.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = icon.svg; sourceTree = "<group>"; };
+		352542E522B4C2C6007A7B0B /* SVGPlayerVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SVGPlayerVC.h; sourceTree = "<group>"; };
+		352542E622B4C2C6007A7B0B /* SVGPlayerVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SVGPlayerVC.m; sourceTree = "<group>"; };
+		352542E922B4C824007A7B0B /* mutiMatte.svga */ = {isa = PBXFileReference; lastKnownFileType = file; path = mutiMatte.svga; sourceTree = "<group>"; };
+		352542EA22B4C824007A7B0B /* heartbeat.svga */ = {isa = PBXFileReference; lastKnownFileType = file; path = heartbeat.svga; sourceTree = "<group>"; };
+		352542EB22B4C824007A7B0B /* rose_2.0.0.svga */ = {isa = PBXFileReference; lastKnownFileType = file; path = rose_2.0.0.svga; sourceTree = "<group>"; };
+		352542EC22B4C824007A7B0B /* rose_1.5.0.svga */ = {isa = PBXFileReference; lastKnownFileType = file; path = rose_1.5.0.svga; sourceTree = "<group>"; };
 		35ECC390225AFAC500BBAE21 /* shareManagerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shareManagerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35ECC39C225AFAC700BBAE21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		35ECC39F225AFAC700BBAE21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -62,6 +78,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		352542E822B4C824007A7B0B /* Samples */ = {
+			isa = PBXGroup;
+			children = (
+				352542E922B4C824007A7B0B /* mutiMatte.svga */,
+				352542EA22B4C824007A7B0B /* heartbeat.svga */,
+				352542EB22B4C824007A7B0B /* rose_2.0.0.svga */,
+				352542EC22B4C824007A7B0B /* rose_1.5.0.svga */,
+			);
+			path = Samples;
+			sourceTree = "<group>";
+		};
 		35ECC387225AFAC500BBAE21 = {
 			isa = PBXGroup;
 			children = (
@@ -87,7 +114,9 @@
 				35ECC3AE225AFDAC00BBAE21 /* T_Appdelegate */,
 				35ECC3B2225AFE4F00BBAE21 /* T_Main */,
 				35ECC3B9225AFF0D00BBAE21 /* T_HomeVC */,
+				352542E822B4C824007A7B0B /* Samples */,
 				35ECC39C225AFAC700BBAE21 /* Assets.xcassets */,
+				352542DE22B4BB9C007A7B0B /* icon.svg */,
 				35ECC3BD225B0AEB00BBAE21 /* Main.storyboard */,
 				35ECC39E225AFAC700BBAE21 /* LaunchScreen.storyboard */,
 				35ECC3A1225AFAC700BBAE21 /* Info.plist */,
@@ -102,6 +131,8 @@
 			children = (
 				35ECC3AB225AFCB800BBAE21 /* XLShareManager.h */,
 				35ECC3AA225AFCB800BBAE21 /* XLShareManager.m */,
+				352542DB22B4B784007A7B0B /* UIImage+SVGManager.h */,
+				352542DC22B4B784007A7B0B /* UIImage+SVGManager.m */,
 			);
 			path = XLShareManager;
 			sourceTree = "<group>";
@@ -131,6 +162,8 @@
 			children = (
 				35ECC3BA225AFF3900BBAE21 /* GXHomeVC.h */,
 				35ECC3BB225AFF3900BBAE21 /* GXHomeVC.m */,
+				352542E522B4C2C6007A7B0B /* SVGPlayerVC.h */,
+				352542E622B4C2C6007A7B0B /* SVGPlayerVC.m */,
 			);
 			path = T_HomeVC;
 			sourceTree = "<group>";
@@ -204,9 +237,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				352542F022B4C824007A7B0B /* rose_1.5.0.svga in Resources */,
 				35ECC3BE225B0AEB00BBAE21 /* Main.storyboard in Resources */,
+				352542EE22B4C824007A7B0B /* heartbeat.svga in Resources */,
 				35ECC3A0225AFAC700BBAE21 /* LaunchScreen.storyboard in Resources */,
 				35ECC39D225AFAC700BBAE21 /* Assets.xcassets in Resources */,
+				352542ED22B4C824007A7B0B /* mutiMatte.svga in Resources */,
+				352542EF22B4C824007A7B0B /* rose_2.0.0.svga in Resources */,
+				352542DF22B4BB9C007A7B0B /* icon.svg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,11 +297,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				352542DD22B4B784007A7B0B /* UIImage+SVGManager.m in Sources */,
 				35ECC3AC225AFCB900BBAE21 /* XLShareManager.m in Sources */,
 				35ECC3A3225AFAC700BBAE21 /* main.m in Sources */,
 				35ECC3B7225AFE9900BBAE21 /* GXBaseNavigationViewController.m in Sources */,
 				35ECC3BC225AFF3900BBAE21 /* GXHomeVC.m in Sources */,
 				35ECC3B8225AFE9900BBAE21 /* GXRootTabBarController.m in Sources */,
+				352542E722B4C2C6007A7B0B /* SVGPlayerVC.m in Sources */,
 				35ECC3B1225AFDAC00BBAE21 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -400,7 +440,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = JWNXJXA43H;
+				DEVELOPMENT_TEAM = 9YQM854BPE;
 				GCC_PREFIX_HEADER = "$(PRODUCT_NAME)/GXPrefixHeader.pch";
 				INFOPLIST_FILE = shareManagerDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -420,7 +460,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = JWNXJXA43H;
+				DEVELOPMENT_TEAM = 9YQM854BPE;
 				GCC_PREFIX_HEADER = "$(PRODUCT_NAME)/GXPrefixHeader.pch";
 				INFOPLIST_FILE = shareManagerDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;

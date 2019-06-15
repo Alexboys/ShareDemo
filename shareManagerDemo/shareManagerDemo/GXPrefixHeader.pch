@@ -81,6 +81,10 @@ return __singleton__; \
 
 //pod文件
 #import <Masonry.h>
+#import <SVGAPlayer.h>
+#import <SVGAParser.h>
+
+#import "SVGKImage.h"
 //友盟分享
 #import <UMCommon/UMCommon.h>
 #import <UMShare/UMShare.h>

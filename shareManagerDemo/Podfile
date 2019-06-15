@@ -11,6 +11,11 @@ target 'shareManagerDemo' do
   pod 'UMCCommon'
   pod 'UMCSecurityPlugins'
   pod 'UMCCommonLog'
+  pod 'SVGAPlayer'
+
+  pod 'SVGKit'
+  pod 'CocoaLumberjack'
+
 
   #U-Share SDK UI模块（分享面板，建议添加）
   pod 'UMCShare/UI'

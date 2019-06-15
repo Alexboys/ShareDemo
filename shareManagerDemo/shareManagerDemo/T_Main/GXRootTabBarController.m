@@ -9,6 +9,8 @@
 #import "GXRootTabBarController.h"
 #import "GXBaseNavigationViewController.h"
 #import "GXHomeVC.h"
+#import "SVGPlayerVC.h"
+#import "UIImage+SVGManager.h"
 
 @interface GXRootTabBarController ()
 
@@ -27,7 +29,7 @@
     
     UIViewController *refreshVC = [self controllerWithClassName:@"GXHomeVC" title:@"首页" imageName:@"money"];
     
-    UIViewController *refreshOneVC = [self controllerWithClassName:@"GXHomeVC" title:@"我的" imageName:@"money"];
+    UIViewController *refreshOneVC = [self controllerWithClassName:@"SVGPlayerVC" title:@"我的" imageName:@"money"];
     
     UIViewController *webVC = [self controllerWithClassName:@"GXHomeVC" title:@"网页" imageName:@"money"];
     
@@ -72,7 +74,9 @@
     [controller.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName :[UIColor orangeColor]} forState:UIControlStateSelected];
     
     //设置tabBarItem上被选中的图片
-    controller.tabBarItem.selectedImage = [[UIImage imageNamed:[NSString stringWithFormat:@"%@_Sel",imageName]]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+//    controller.tabBarItem.selectedImage = [[UIImage imageNamed:[NSString stringWithFormat:@"%@_Sel",imageName]]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+
+    controller.tabBarItem.selectedImage = [[UIImage svgImageNamed:@"icon" size:CGSizeMake(XWLayout(40), XWLayout(40))]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     
     //把首页控制器作为导航控制器的根视图控制器
     GXBaseNavigationViewController *navController = [[GXBaseNavigationViewController alloc]initWithRootViewController:controller];
