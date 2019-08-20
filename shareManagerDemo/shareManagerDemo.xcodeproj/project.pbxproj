@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		314FC28BE12AA06079B730A6 /* libPods-shareManagerDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 46080498E6F83AC1E59D6FF1 /* libPods-shareManagerDemo.a */; };
+		351DA73422D58464003FBF9E /* TestFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 351DA73322D58464003FBF9E /* TestFirstViewController.m */; };
 		352542DD22B4B784007A7B0B /* UIImage+SVGManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 352542DC22B4B784007A7B0B /* UIImage+SVGManager.m */; };
 		352542DF22B4BB9C007A7B0B /* icon.svg in Resources */ = {isa = PBXBuildFile; fileRef = 352542DE22B4BB9C007A7B0B /* icon.svg */; };
 		352542E722B4C2C6007A7B0B /* SVGPlayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 352542E622B4C2C6007A7B0B /* SVGPlayerVC.m */; };
@@ -27,6 +28,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		351DA73222D58464003FBF9E /* TestFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestFirstViewController.h; sourceTree = "<group>"; };
+		351DA73322D58464003FBF9E /* TestFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestFirstViewController.m; sourceTree = "<group>"; };
 		352542DB22B4B784007A7B0B /* UIImage+SVGManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+SVGManager.h"; sourceTree = "<group>"; };
 		352542DC22B4B784007A7B0B /* UIImage+SVGManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SVGManager.m"; sourceTree = "<group>"; };
 		352542DE22B4BB9C007A7B0B /* icon.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = icon.svg; sourceTree = "<group>"; };
@@ -78,6 +81,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		351DA73122D5843B003FBF9E /* TestController */ = {
+			isa = PBXGroup;
+			children = (
+				351DA73222D58464003FBF9E /* TestFirstViewController.h */,
+				351DA73322D58464003FBF9E /* TestFirstViewController.m */,
+			);
+			path = TestController;
+			sourceTree = "<group>";
+		};
 		352542E822B4C824007A7B0B /* Samples */ = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +122,7 @@
 		35ECC392225AFAC500BBAE21 /* shareManagerDemo */ = {
 			isa = PBXGroup;
 			children = (
+				351DA73122D5843B003FBF9E /* TestController */,
 				35ECC3A9225AFCB800BBAE21 /* XLShareManager */,
 				35ECC3AE225AFDAC00BBAE21 /* T_Appdelegate */,
 				35ECC3B2225AFE4F00BBAE21 /* T_Main */,
@@ -299,6 +312,7 @@
 			files = (
 				352542DD22B4B784007A7B0B /* UIImage+SVGManager.m in Sources */,
 				35ECC3AC225AFCB900BBAE21 /* XLShareManager.m in Sources */,
+				351DA73422D58464003FBF9E /* TestFirstViewController.m in Sources */,
 				35ECC3A3225AFAC700BBAE21 /* main.m in Sources */,
 				35ECC3B7225AFE9900BBAE21 /* GXBaseNavigationViewController.m in Sources */,
 				35ECC3BC225AFF3900BBAE21 /* GXHomeVC.m in Sources */,

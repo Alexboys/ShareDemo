@@ -9,6 +9,7 @@
 #import "GXRootTabBarController.h"
 #import "GXBaseNavigationViewController.h"
 #import "GXHomeVC.h"
+#import "TestFirstViewController.h"
 #import "SVGPlayerVC.h"
 #import "UIImage+SVGManager.h"
 
@@ -33,7 +34,7 @@
     
     UIViewController *webVC = [self controllerWithClassName:@"GXHomeVC" title:@"网页" imageName:@"money"];
     
-    UIViewController *SpecialVC = [self controllerWithClassName:@"GXHomeVC" title:@"推荐" imageName:@"money"];
+    UIViewController *SpecialVC = [self controllerWithClassName:@"TestFirstViewController" title:@"TestFirst" imageName:@"money"];
 
 
     //把导航控制器添加到tabBarController里,作为子控制器
